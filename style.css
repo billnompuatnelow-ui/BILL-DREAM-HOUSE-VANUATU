@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header.hero {
+    position: relative;
+    text-align: center;
+}
+
+header.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #004aad;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* FIXED: added semicolon */
+    text-decoration: none;
+    font-weight: bold; /* fixed syntax issue */
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #003b73;
+    border-radius: 4px;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Figure / Images */
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 0 8px gray; /* FIXED: proper box-shadow syntax */
+    border-radius: 5px;
+}
+
+/* Property Cards */
+.property-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header.hero h1 {
+        font-size: 2rem;
+    }
+}
